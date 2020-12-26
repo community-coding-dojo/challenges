@@ -4,9 +4,9 @@
 
 Program the classic video game Pong in python. You start with an empty canvas that and a prepared game loop.
 
-![Pypong](demo.mp4)
+![Pypong](demo.gif)
 
-### Concepts that you should know:
+### Concepts you should know:
 
 - variables
 - types
@@ -39,7 +39,7 @@ Program the game pong in python. You are provided with an empty canvas, that you
 a `game_loop` function that will be called every game tick and a `key_down` function that is called,
 whenever a player presses a button on the keyboard.
 
-Your end result should look something like [this](demo.mp4).
+Your end result should look roughly like this: ![demo](demo.gif)
 
 **Hints**:
 - You only need to edit the file [pong/core.py](pong/core.py). Don't touch anything else ;)
