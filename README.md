@@ -10,7 +10,9 @@ Programming-challenges for the dojo
 
         You have retrieved the hash of a very secret password.
         Write a script to crack it!
-2. [**pypong**](beginner/pypong/README.md)
+
+### Intermediate
+1. [**pypong**](intermediate/pypong/README.md)
    
         Program the classic video game Pong in python!
 
