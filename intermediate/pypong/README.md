@@ -4,8 +4,6 @@
 
 Program the classic video game Pong in python. You start with an empty canvas that and a prepared game loop.
 
-![Pypong](demo.gif)
-
 ### Concepts you should know:
 
 - variables
