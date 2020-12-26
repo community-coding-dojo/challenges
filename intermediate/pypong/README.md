@@ -39,7 +39,9 @@ Program the game pong in python. You are provided with an empty canvas, that you
 a `game_loop` function that will be called every game tick and a `key_down` function that is called,
 whenever a player presses a button on the keyboard.
 
-Your end result should look roughly like this: ![demo](demo.gif)
+Your end result should look roughly like this:
+
+![demo](demo.gif)
 
 **Hints**:
 - You only need to edit the file [pong/core.py](pong/core.py). Don't touch anything else ;)
