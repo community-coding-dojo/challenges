@@ -1,5 +1,7 @@
 # Challenge Name
 
+**Author**: [community-coding-dojo][1]
+
 ## Description
 
 A short description of your challenge
@@ -27,7 +29,7 @@ Things people need to do if they're using Linux before working on this challenge
 
 Things people need to do if they're using Windows before working on this challenge.
 
-**All challenges require the [essentials](../../docs/Essentials.md) to be set up!**
+**All challenges require the [essentials][2] to be set up!**
 
 ## Run
 
@@ -45,3 +47,6 @@ is provided by the author and how to know if they solved it correctly.
 ---
 
 # HFGL!
+
+[1]: https://github.com/community-coding-dojo
+[2]: ../../docs/Essentials.md
