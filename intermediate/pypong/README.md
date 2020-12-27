@@ -50,7 +50,7 @@ Your end result should look roughly like this:
 
 ---
 
-# HFGL!
+# GLHF!
 
 [1]: https://github.com/theCalcaholic
 [2]: ../../docs/Essentials.md

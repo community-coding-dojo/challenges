@@ -46,7 +46,7 @@ is provided by the author and how to know if they solved it correctly.
 
 ---
 
-# HFGL!
+# GLHF!
 
 [1]: https://github.com/community-coding-dojo
 [2]: ../../docs/Essentials.md

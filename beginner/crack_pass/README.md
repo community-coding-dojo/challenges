@@ -37,7 +37,7 @@ The password hash and additional hints can be found in the [crack_pass.py][3].
 
 ---
 
-# HFGL!
+# GLHF!
 
 [1]: https://github.com/Snaakn
 [2]: ../../docs/Essentials.md
