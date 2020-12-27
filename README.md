@@ -1,5 +1,5 @@
 # challenges
-Programming-challenges for the dojo
+Programming-challenges for the [Coding Dojo](https://github.com/community-coding-dojo).
 
 *All challenges expect you to have set up the [Essentials](docs/Essentials.md) correctly!*
 
