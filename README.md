@@ -11,7 +11,7 @@ Programming-challenges for the [Coding Dojo](https://github.com/community-coding
       git clone https://github.com/community-coding-dojo/challenges.git coding_dojo_challenges
       ```
 
-2. Follow the instructions within the individual challenges' readmes.
+2. Follow the instructions in the individual challenges
 
 ## Challenge List
 
