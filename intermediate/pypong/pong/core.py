@@ -3,8 +3,9 @@ from time import sleep
 # You can define configuration variables here.
 bg_color = "#AAAAAA"
 
-# If you need to change a variable from within a function, you need to
-# declare a global variable with the same name inside the function, for example:
+# If you need to change a configuration variable from within a function, you need to
+# declare a global variable with the same name inside the function. Otherwise, the variable will be read-only
+# (inside the function). For example, let's write a function which can change the bg_color variable:
 
 
 def change_bg_variable():
