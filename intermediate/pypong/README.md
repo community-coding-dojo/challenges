@@ -4,7 +4,7 @@
 
 Program the classic video game Pong in python. You start with an empty canvas that and a prepared game loop.
 
-### Concepts you should know:
+### Concepts you should be familiar with:
 
 - variables
 - types
@@ -45,3 +45,9 @@ Your end result should look roughly like this:
 - You only need to edit the file [pong/core.py](pong/core.py). Don't touch anything else ;)
 - Within this file you will find further instructions and examples for a few useful commands
 - You'll probably not need any code outside of the predefined functions, except maybe for variable declarations
+
+---
+
+```diff
+- HFGL
+```
