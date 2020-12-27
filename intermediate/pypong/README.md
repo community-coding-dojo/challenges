@@ -48,6 +48,4 @@ Your end result should look roughly like this:
 
 ---
 
-```diff
-- HFGL
-```
+# HFGL!

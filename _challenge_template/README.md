@@ -44,6 +44,4 @@ is provided by the author and how to know if they solved it correctly.
 
 ---
 
-```diff
-- HFGL
-```
+# HFGL!
