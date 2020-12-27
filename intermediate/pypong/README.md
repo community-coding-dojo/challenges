@@ -36,7 +36,7 @@ python3 main.py
 ## Task
 
 Program the game pong in python. You are provided with an empty canvas, that you can draw objects on,
-a `game_loop` function that will be called every game tick and a `key_down` function that is called,
+a `game_loop` function where most of your game takes place and a `key_down` function that is called,
 whenever a player presses a button on the keyboard.
 
 Your end result should look roughly like this:

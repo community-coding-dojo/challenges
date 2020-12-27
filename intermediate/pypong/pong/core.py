@@ -17,8 +17,11 @@ def game_loop(canvas, signal=None):
     # The canvas is where your game happens. You can, for example draw shapes on it and move them around
     canvas.configure(bg=bg_color)  # <-- This sets the canvas' background color
 
-    # This draws a circle on the canvas:
-    circle = canvas.create_oval((100, 100, 120, 120), fill='blue', outline="black")
+    # This draws a circle on the canvas. You can pass the coordinates of any opposing corners to define it's size
+    # and position:
+    circle = canvas.create_oval((100, 100,  # <-- top-left corner coordinates
+                                 120, 120   # <-- bottom-right corner coordinates
+                                 ), fill='blue', outline="black")
 
     # let's wait a few seconds:
     sleep(3)
@@ -26,11 +29,12 @@ def game_loop(canvas, signal=None):
     canvas.move(circle, 30, 0)
 
     # If you want to find out more about the canvas and it's functions, search the internet for 'tkinter canvas'
+    # or have a look at the official documentation at https://tkdocs.com/tutorial/canvas.html
 
     while signal is None or signal.Code < 0:
         # Here goes the game's main loop. The signal variable is just used to tell the game loop to terminate,
         # e.g. when the window is closed.
-        # You can ignore it for now
+        # You can ignore it for now, since it already does everything it's supposed to
         pass
 
 
