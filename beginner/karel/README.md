@@ -4,6 +4,8 @@
 
 ## Description
 
+![karel-screenshot][5]
+
 In this challenge, you take control over Karel, a little robot, which has to solve various tasks.
 
 ### Concepts and libraries you should be familiar with:
@@ -83,3 +85,4 @@ Further information on Karel (and more examples) can be found [here][4]
 [2]: ../../docs/Essentials.md
 [3]: ../../docs/venv.md
 [4]: https://compedu.stanford.edu/karel-reader/docs/python/en/intro.html
+[5]: karel_screenshot.png
