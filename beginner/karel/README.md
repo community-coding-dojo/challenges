@@ -4,9 +4,9 @@
 
 ## Description
 
-![karel-screenshot][5]
-
 In this challenge, you take control over Karel, a little robot, which has to solve various tasks.
+
+![karel-screenshot][5]
 
 ### Concepts and libraries you should be familiar with:
 
