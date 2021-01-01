@@ -4,7 +4,7 @@ from stanfordkarel import *
 """
 This is the more complex version of task 02. Try to follow the same principles and write as little code as possible. ;)
 
-Current high score: ? lines of code
+Current high score: 11 lines of code
 """
 
 
