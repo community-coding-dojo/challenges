@@ -6,6 +6,8 @@ Your job is to give him clear instructions for resolving those ;)
 For that purpose, you can use the commands, described in the main function below and then follow the instructions in
 the Readme for running your solution.
 
+In this task, Karel needs to move to the beeper (the green thingy), pick it up and return to its initial position
+
 Good luck!
 """
 
