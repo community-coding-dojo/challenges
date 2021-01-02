@@ -4,7 +4,7 @@ from stanfordkarel import *
 Karel wants to play chess with its friend, Coral. Help it to prepare the chess board by making it put beepers at the
 right places.
 
-If you've done everything right, you should be able to use your program for both 03_chessboard.w and 03_chessboard_2.w
+If you've done everything right, you should be able to use your program for both 04_chessboard.w and 04_chessboard_2.w
 - try it out (you can load another map by clicking on "Load World" in the Karel application).
 
 high score: ? Karel commands
