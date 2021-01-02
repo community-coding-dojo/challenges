@@ -16,7 +16,7 @@ In this challenge, you take control over Karel, a little robot, which has to sol
 
 ## Setup
 
-Make sure that you are currently in the right directory.pip
+*The following instructions assume that you are currently in the beginner/karel directory.*
 
 ### Linux
 
