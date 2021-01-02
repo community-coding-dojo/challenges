@@ -4,7 +4,7 @@ from stanfordkarel import *
 """
 Oh no! Karel is lost! Help it to find a way through the labyrinth.
 
-high score: ? Karel commands
+high score: 7 Karel commands
 """
 
 
