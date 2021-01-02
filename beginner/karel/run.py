@@ -1,5 +1,6 @@
 import sys
 from os import path, listdir
+import re
 import tkinter as tk
 from tkinter import ttk, Toplevel, filedialog
 from stanfordkarel.karel import Karel
@@ -45,6 +46,46 @@ def get_karel_app(solution_file=None, world_file="", master=None):
     return KarelApplication(karel, solution_file, master=root)
 
 
+def count_karel_commands(solution_file):
+
+    with open(solution_file, 'r') as handle:
+        code = handle.read()
+
+        code = re.sub(r'#.*\n', "", code)
+        code = "".join(re.split(r'"""', code)[::2])
+
+        karel_commands = [
+            "move",
+            "turn_left",
+            "pick_beeper",
+            "put_beeper",
+            "facing_north",
+            "facing_south",
+            "facing_east",
+            "facing_west",
+            "not_facing_north",
+            "not_facing_south",
+            "not_facing_east",
+            "not_facing_west",
+            "front_is_clear",
+            "beepers_present",
+            "no_beepers_present",
+            "beepers_in_bag",
+            "no_beepers_in_bag",
+            "front_is_blocked",
+            "left_is_blocked",
+            "left_is_clear",
+            "right_is_blocked",
+            "right_is_clear",
+            "paint_corner",
+            "corner_color_is",
+        ]
+        total_count = 0
+        for command in karel_commands:
+            total_count += code.count(command)
+        return total_count
+
+
 class GoalDialog(Toplevel):
 
     def __init__(self, goal_file, parent=None):
@@ -77,11 +118,14 @@ class GoalDialog(Toplevel):
 
 if __name__ == "__main__":
     solution_file = get_solution_file(path.join(path.dirname(__file__), 'solutions'))
+
+    print(f"Your Karel command score is: {count_karel_commands(solution_file)}")
+
     root = tk.Tk()
     worlds_path = path.join(path.dirname(__file__), "worlds")
     world_file_base = path.join(worlds_path, path.splitext(path.basename(solution_file))[0])
     world_file = world_file_base + ".w"
-    goal_file = world_file_base + "_end.w"
+    goal_file = world_file_base + ".goal"
     if not path.isfile(world_file):
         print(f"WARNING: Could not find world file {world_file}! Please name your solution in accordance with the world "
               f"file.")
