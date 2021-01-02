@@ -16,6 +16,8 @@ In this challenge, you take control over Karel, a little robot, which has to sol
 
 ## Setup
 
+Make sure that you are currently in the right directory.pip
+
 ### Linux
 
 1. Install the package python3-tk. For example, on Ubuntu: 
@@ -49,7 +51,7 @@ python ./run.py
 ```
 
 A dialog will open, showing you all the Karel tasks. Select the one you want to run and confirm.
-Now you will be shown how two windows: One shows the state of the map after you have solved the task (Karel Goal) and
+Now you will be presented two windows: One shows the state of the map after you have solved the task (Karel Goal) and
 the other one shows the solution runner, where you can see your script in action.
 
 ## Task
@@ -74,6 +76,12 @@ Within all solutions, you are given access to a number of functions which contro
 For most tasks, only a subset of these commands will be required. This subset will usually be
 explained within the solution template.
 
+## Run the program
+
+After you have written your code you first need to run (and save) it in your programming software
+before you can open and run the visual game.
+
+----
 
 Further information on Karel (and more examples) can be found [here][4]
 
