@@ -1,13 +1,17 @@
 from stanfordkarel import *
 
 """
+Time for some sportive activity! Karel is doing a hurdle race. Help it, to jump the hurdles.
+
 Now, you >could< write this solutions's main function by manually filling in all the individual steps Karel is going to
 perform - but that wouldn't be any fun.
 Instead, try to use if conditions and while loops in order to reduce the code you need to write to a minimum.
 
 You can also define extra functions for structuring your code.
 
-Current high score: 15 lines of code
+Keep in mind: Karel needs to touch the "ground" after each hurdle before jumping the next one.
+
+high score: ? Karel commands
 """
 
 

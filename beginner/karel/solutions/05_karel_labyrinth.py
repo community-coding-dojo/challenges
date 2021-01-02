@@ -2,9 +2,9 @@ from stanfordkarel import *
 
 
 """
-This is the more complex version of task 02. Try to follow the same principles and write as little code as possible. ;)
+Oh no! Karel is lost! Help it to find a way through the labyrinth.
 
-Current high score: 11 lines of code
+high score: ? Karel commands
 """
 
 
