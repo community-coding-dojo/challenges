@@ -88,9 +88,10 @@ def count_karel_commands(solution_file):
 
 class GoalDialog(Toplevel):
 
-    def __init__(self, goal_file, parent=None):
+    def __init__(self, goal_file, parent=None, refresh_fn=None):
         super().__init__(parent)
         self.goal_file = goal_file
+        self.refresh_fn = refresh_fn
         body = ttk.Frame(self, width=620, height=440)
         self.initial_focus = self.body(body)
         body.pack(expand=True, fill=tk.BOTH)
@@ -112,8 +113,9 @@ class GoalDialog(Toplevel):
         self.canvas.pack()
 
     def buttonbox(self):
-        ok_button = ttk.Button(self, text="Okay", command=self.destroy)
-        ok_button.pack()
+        if self.refresh_fn is not None:
+            refresh_button = ttk.Button(self, text="Refresh Program", command=self.refresh_fn)
+            refresh_button.pack()
 
 
 if __name__ == "__main__":
@@ -134,8 +136,15 @@ if __name__ == "__main__":
 
     app = get_karel_app(solution_file, world_file=world_file, master=root)
 
+    def reset_app():
+        global app
+        app.pack_forget()
+        app.destroy()
+        app = get_karel_app(solution_file, world_file=world_file, master=root)
+
+
     if path.isfile(goal_file):
-        goal_dialog = GoalDialog(goal_file, parent=root)
+        goal_dialog = GoalDialog(goal_file, parent=root, refresh_fn=reset_app)
     else:
         print(f"WARNING: No goal definition found!")
 
