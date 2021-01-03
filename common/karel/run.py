@@ -1,5 +1,6 @@
 import sys
-from os import path, listdir
+import os
+from os import path
 import re
 import tkinter as tk
 from tkinter import ttk, Toplevel, filedialog
@@ -119,12 +120,13 @@ class GoalDialog(Toplevel):
 
 
 if __name__ == "__main__":
-    solution_file = get_solution_file(path.join(path.dirname(__file__), 'solutions'))
+    repo_dir = path.join(path.dirname(__file__), os.pardir, os.pardir)
+    solution_file = get_solution_file(path.join(repo_dir, 'beginner', 'karel', 'solutions'))
 
     print(f"Your Karel command score is: {count_karel_commands(solution_file)}")
 
     root = tk.Tk()
-    worlds_path = path.join(path.dirname(__file__), "worlds")
+    worlds_path = path.join(repo_dir, "beginner", "karel", "worlds")
     world_file_base = path.join(worlds_path, path.splitext(path.basename(solution_file))[0])
     world_file = world_file_base + ".w"
     goal_file = world_file_base + ".goal"

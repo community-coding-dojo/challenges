@@ -20,34 +20,35 @@ In this challenge, you take control over Karel, a little robot, which has to sol
 
 ### Linux
 
-1. Install the package python3-tk. For example, on Ubuntu: 
-    ```sh
-    apt install python3-tk
-    ```
-2. Install the dependencies for the karel challenges with the following command.
-   [Creating and activating a virtual environment is recommended][3]
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-
+Install the package python3-tk. For example, on Ubuntu: 
+ ```sh
+ apt install python3-tk
+ ```
+   
 ### Windows
 
-1. Install the dependencies for the karel challenges with the following command.
-   [Creating and activating a virtual environment is recommended][3]
-   ```sh
-   pip install -r requirements.txt
-   ```
+*Nothing to do*
 
 
 **All challenges require the [essentials][2] to be set up!**
 
 ## Run
 
-To run and test your solutions to the various Karel tasks, execute the following command:
+### Linux
+
+Run the karel script from this repositories `bin` directory (double clicking it should work as well):
 
 ```sh
-python ./run.py
+bin/karel.sh
+```
+
+
+### Windows
+
+Run the karel script from this repositories `bin` directory (double clicking it should work as well):
+
+```sh
+bin/karel.bat
 ```
 
 A dialog will open, showing you all the Karel tasks. Select the one you want to run and confirm.
