@@ -30,7 +30,9 @@ Programming-challenges for the [Coding Dojo][1].
    
        Program the classic video game Pong in python!
 
-2. [**Karel the Robot**][6]
+### Advanced
+
+1. [**Karel the Robot**][6]
         
        Karel is a little robot that requires your help to solve various tasks.
 

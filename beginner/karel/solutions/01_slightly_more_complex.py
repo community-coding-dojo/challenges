@@ -1,5 +1,10 @@
 from stanfordkarel import *
 
+"""
+This task is similar to but slightly more complex than 00_karel_intro. Compare the map to the goal picture to figure
+out what you need to do!
+"""
+
 
 def main():
     ############################################################################
