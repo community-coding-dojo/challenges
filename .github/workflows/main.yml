@@ -24,5 +24,5 @@ jobs:
           # Access token required to send to matrix server
           access_token: "${{ secrets.MATRIX_GITHUB_BOT_ACCESS_TOKEN }}"
           # Message to send in plaintext format
-          message: "$MSG"
+          message: "${{ env.MSG }}"
   
