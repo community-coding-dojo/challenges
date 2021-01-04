@@ -8,6 +8,7 @@ jobs:
   retrieve-last-commit-message:
     runs-on: ubuntu-latest
     steps:
+      - run: "ls -l"
       - run: echo "MSG=$(git log --pretty=oneline -n 1 --abbrev-commit)" >> $GITHUB_ENV
   send-matrix-message:
     runs-on: ubuntu-latest
