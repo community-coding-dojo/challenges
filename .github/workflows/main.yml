@@ -27,6 +27,8 @@ jobs:
             
             **Changelog:**
             ```
-            ${{ join(github.event.commits.*.message, '```\n```') }}
+            ${{ join(github.event.commits.*.message, '```
+            
+            ```') }}
             ```
   
