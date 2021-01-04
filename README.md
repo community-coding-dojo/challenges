@@ -40,4 +40,4 @@ Programming-challenges for the [Coding Dojo][1].
 [3]: beginner/crack_pass/README.md
 [4]: beginner/karel/README.md
 [5]: intermediate/pypong/README.md
-[6]: intermediate/karel/README.md
+[6]: advanced/karel/README.md

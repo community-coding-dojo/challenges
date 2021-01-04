@@ -17,7 +17,7 @@ class TaskPickerDialog:
 
         self.repo_path = Path(__file__).parent.parent.parent.parent
 
-        for difficulty in ['beginner', 'intermediate']:
+        for difficulty in ['beginner', 'intermediate', 'advanced']:
             self.karel_paths[difficulty] = self.repo_path / difficulty / 'karel'
         self.master = Frame(self.root)
         self.body(self.master)
@@ -26,7 +26,7 @@ class TaskPickerDialog:
     def body(self, master) -> NoReturn:
         self.karel_tasks = []
         for difficulty, path in self.karel_paths.items():
-            self.karel_tasks.append({"value": f"-- difficulty --", "path": None, "difficulty": difficulty})
+            self.karel_tasks.append({"value": f"-- {difficulty} --", "path": None, "difficulty": difficulty})
             for p in (path / 'solutions').glob("*.py"):
                 self.karel_tasks.append({"value": p.stem, "path": p, "difficulty": difficulty})
 
