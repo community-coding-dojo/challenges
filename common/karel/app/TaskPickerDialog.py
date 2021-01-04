@@ -1,20 +1,19 @@
-import os
 from pathlib import Path
 import tkinter as tk
-from tkinter.simpledialog import Dialog
 from tkinter import Listbox, StringVar
-from tkinter.ttk import Button, Frame
-from typing import NoReturn, Tuple
+from tkinter.ttk import Frame
+from tkinter import Event
+from typing import NoReturn, Tuple, Union
 
 
 class TaskPickerDialog:
 
     def __init__(self):
-        self.listbox = None
         self.karel_paths = {}
         self.karel_tasks = {}
         self.selection = (None, None, None)
         self.root = tk.Tk()
+        self.root.title = 'Choose a task'
 
         self.repo_path = Path(__file__).parent.parent.parent.parent
 
@@ -22,7 +21,6 @@ class TaskPickerDialog:
             self.karel_paths[difficulty] = self.repo_path / difficulty / 'karel'
         self.master = Frame(self.root)
         self.body(self.master)
-        self.buttonbox(self.master)
         self.master.pack()
 
     def body(self, master) -> NoReturn:
@@ -33,23 +31,22 @@ class TaskPickerDialog:
                 self.karel_tasks.append({"value": p.stem, "path": p, "difficulty": difficulty})
 
         options = StringVar(value=[])
-        self.listbox = Listbox(master=master, height=max(len(self.karel_tasks), 20), listvariable=options)
-        self.listbox.pack()
+        listbox = Listbox(master=master, height=max(len(self.karel_tasks), 20), listvariable=options)
+        listbox.pack()
         task_names = []
         for item in self.karel_tasks:
             task_names.append(item['value'])
         options.set(task_names)
 
-    def buttonbox(self, master) -> NoReturn:
-        ok_button = Button(master=master, text="Ok", command=self.save_selection_and_close)
-        ok_button.pack()
+        listbox.bind("<<ListboxSelect>>", self.save_selection_and_close)
 
-    def save_selection_and_close(self) -> NoReturn:
-        if len(self.listbox.curselection()) == 0:
+    def save_selection_and_close(self, event: Event) -> NoReturn:
+
+        if len(event.widget.curselection()) == 0:
             print("No task selected!")
             return
 
-        selection = self.karel_tasks[self.listbox.curselection()[0]]
+        selection = self.karel_tasks[event.widget.curselection()[0]]
         if selection['path'] is None:
             print("Invalid selection!")
             return
@@ -61,6 +58,6 @@ class TaskPickerDialog:
         self.root.destroy()
         self.selection = (task_path, world_path, goal_path)
 
-    def run(self) -> Tuple[Path, Path, Path]:
+    def run(self) -> Union[Tuple[Path, Path, Path], Tuple[None, None, None]]:
         self.root.mainloop()
         return self.selection
