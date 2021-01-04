@@ -26,6 +26,7 @@ jobs:
             The ${{github.event.repository.name }} repo has been updated!
             
             **Changelog:**
+            
             ```
             ${{ join(github.event.commits.*.message, '```
             
