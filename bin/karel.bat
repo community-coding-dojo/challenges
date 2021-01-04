@@ -1,3 +1,4 @@
+@echo off
 SET scriptpath=%~dp0
 
 if not exist "%scriptpath%\..\venvs\karel" (

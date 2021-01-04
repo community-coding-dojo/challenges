@@ -6,9 +6,14 @@ Oh no! Karel is lost - again! Help it to find a way through the labyrinth.
 
 Hint: Place beepers to remember, where you've been already ;)
 
+Bonus task: Have beepers mark the path that Karel took (remove them everywhere else)
+
 ==Leaderboard==
 
-high score: ? Karel commands
+high score: 13 Karel commands
+
+1. (13) theCalcaholic
+
 """
 
 

@@ -4,7 +4,6 @@ from os import path
 from pathlib import Path
 import re
 import tkinter as tk
-from tkinter import filedialog
 from typing import Tuple, NoReturn
 from stanfordkarel.karel import Karel
 from stanfordkarel.karel_application import KarelApplication
