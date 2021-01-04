@@ -8,6 +8,8 @@ jobs:
   send-matrix-message:
     runs-on: ubuntu-latest
     steps:
+      - name: retrieve-last-commit-message
+        run: echo "MSG=$(git log --pretty=oneline -n 1 --abbrev-commit)" >> $GITHUB_ENV
       - name: matrix-message
         # You may pin to the exact commit or the version.
         # uses: s3krit/Matrix-Message@70ad3fb812ee0e45ff8999d6af11cafad11a6ecf
@@ -20,5 +22,5 @@ jobs:
           # Access token required to send to matrix server
           access_token: "${{ secrets.MATRIX_GITHUB_BOT_ACCESS_TOKEN }}"
           # Message to send in plaintext format
-          message: "The challenges repo has been updated! It's pulling time, everyone!"
+          message: "${MSG}"
   
