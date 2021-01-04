@@ -21,6 +21,8 @@ jobs:
           access_token: "${{ secrets.MATRIX_GITHUB_BOT_ACCESS_TOKEN }}"
           # Message to send in plaintext format
           message: |
+            
+            ===========================
             The ${{github.event.repository.name }} repo has been updated!
             
             **Changelog:**
