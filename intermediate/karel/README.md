@@ -1,6 +1,9 @@
-# Karel the Robot (difficulty: beginner)
+Karel the Robot
+difficulty: intermediate
+====
 
 **Author**: [theCalcaholic][1]
+
 
 ## Description
 
