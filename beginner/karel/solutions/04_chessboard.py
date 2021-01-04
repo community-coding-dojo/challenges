@@ -7,7 +7,10 @@ right places.
 If you've done everything right, you should be able to use your program for both 04_chessboard.w and 04_chessboard_2.w
 - try it out (you can load another map by clicking on "Load World" in the Karel application).
 
+==Leaderboard==
+
 high score: ? Karel commands
+
 """
 
 

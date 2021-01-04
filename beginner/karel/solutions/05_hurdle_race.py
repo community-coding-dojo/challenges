@@ -11,7 +11,13 @@ You can also define extra functions for structuring your code.
 
 Keep in mind: Karel needs to touch the "ground" after each hurdle before jumping the next one.
 
-high score: 9 Karel commands
+==Leaderboard==
+
+high score: 7 Karel commands
+
+1. (7) snakn
+2. (9) theCalcaholic
+
 """
 
 

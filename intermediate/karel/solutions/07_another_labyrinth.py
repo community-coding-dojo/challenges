@@ -6,6 +6,8 @@ Oh no! Karel is lost - again! Help it to find a way through the labyrinth.
 
 Hint: Place beepers to remember, where you've been already ;)
 
+==Leaderboard==
+
 high score: ? Karel commands
 """
 

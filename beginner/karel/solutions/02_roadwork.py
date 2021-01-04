@@ -15,6 +15,8 @@ Lower is obviously better.
 For your convenience, the Karel command score will be calculated for you when you execute run.py - have a look at the
 console output.
 
+==Leaderboard==
+
 high score: ? Karel commands
 """
 

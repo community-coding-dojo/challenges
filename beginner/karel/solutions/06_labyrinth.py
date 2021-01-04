@@ -4,7 +4,11 @@ from stanfordkarel import *
 """
 Oh no! Karel is lost! Help it to find a way through the labyrinth.
 
+==Leaderboard==
+
 high score: 7 Karel commands
+
+1. (7) theCalcaholic
 """
 
 
